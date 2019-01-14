@@ -16,9 +16,8 @@ $f3 = Base::instance();
 
 //define a default route
 $f3->route('GET /', function(){
-    echo '<h1>My Fav Foods</h1>';
-   // $view = new View;
-    //echo $view->render('views/home.html');
+    $view = new View;
+    echo $view->render('views/home.html');
 });
 
 //run fat free
